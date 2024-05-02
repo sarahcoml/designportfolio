@@ -1,0 +1,29 @@
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 10px; /* Make the arrow smaller */
+    height: 10px; /* Make the arrow smaller */
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 5px;
+    animation: arrowBlink 1s infinite alternate;
+  }
+  
+  @keyframes arrowBlink {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5px); /* Add animation to move arrow up and down */
+    }
+  }
+  

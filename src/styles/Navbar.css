@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    background: #fff; /* Optional: background color */
+    padding: 10px; /* Padding around the links */
+  }
+  
+  .navbar .nav-link {
+    text-decoration: none;
+    color: black; /* Text color */
+    padding: 20px 10px; /* Adjusted padding inside the links */
+    padding-bottom: 5px;
+    padding-top: 10px;
+    display: inline-block; /* Change display to inline-block */
+    position: relative;
+    margin-right: 10px; /* Add margin between the links */
+  }
+  
+  
+  
+  .navbar .nav-link:before {
+    content: '';
+    position: absolute;
+    top: -3px; /* Move the line above each title by default */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent; /* Default no color */
+    transition: height 0.3s; /* Add transition for smoother animation */
+  }
+  
+  
+  .navbar .nav-link.active:before {
+    height: 100%; /* Expand the line to cover the entire box when selected */
+  }
+  
+  .navbar .nav-link:nth-child(1):before {
+    background-color: orange; /* Default thin line color for Home */
+  }
+  
+  .navbar .nav-link:nth-child(2):before {
+    background-color: blue; /* Default thin line color for About */
+  }
+  
+  .navbar .nav-link:nth-child(3):before {
+    background-color: green; /* Default thin line color for Projects */
+  }
+  
+  .navbar .nav-link:nth-child(4):before {
+    background-color: red; /* Default thin line color for Contact */
+  }
+  /* Text color for active link */
+  .navbar .nav-link.active {
+    color: black; /* Text color for active link */
+  }

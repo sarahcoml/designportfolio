@@ -1,0 +1,58 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .text-container h1 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+  
+  .text-container h2 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 24px;
+  }
+  
+  .name {
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  .job-title {
+    animation: text-rotate 2s linear infinite;
+  }
+  
+  @keyframes text-rotate {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .project-card {
+    border: 1px solid #0039A6; /* MTA blue */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .project-card .MuiCardMedia-root {
+    border-bottom: 1px solid #0039A6; /* MTA blue */
+  }
+  
+  .project-card .MuiCardContent-root {
+    background-color: #F9F9F9; /* Light gray */
+  }
+  
+  .project-card .MuiButton-root {
+    color: #0039A6; /* MTA blue */
+  }

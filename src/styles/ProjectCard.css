@@ -1,0 +1,33 @@
+.projects-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+     /* Automatically fit as many cards as possible with a minimum width of 250px */
+    gap: 25px; /* Space between cards */
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure overflow is hidden */
+    background-color: #0039A6; /* MTA blue background */
+    padding-top: 20px; /* Add padding for spacing */
+    padding: 200px 100px; /* Padding around the cards */
+  
+    animation: scrollAnimation 10s linear infinite alternate; /* Scroll animation */
+  }
+  
+  
+  .project-card {
+    border: 1px solid #0039A6; /* MTA blue */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .project-card .MuiCardMedia-root {
+    border-bottom: 1px solid #0039A6; /* MTA blue */
+  }
+  
+  .project-card .MuiCardContent-root {
+    background-color: #F9F9F9; /* Light gray */
+  }
+  
+  .project-card .MuiButton-root {
+    color: #0039A6; /* MTA blue */
+  }
+  
